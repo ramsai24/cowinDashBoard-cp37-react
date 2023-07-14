@@ -15,8 +15,8 @@ const VaccinationByAge = prop => {
       <ResponsiveContainer width="100%" height={300}>
         <PieChart>
           <Pie
-            cx="70%"
-            cy="40%"
+            cx="50%"
+            cy="50%"
             data={data1}
             startAngle={0}
             endAngle={360}
@@ -28,12 +28,7 @@ const VaccinationByAge = prop => {
             <Cell name="45-60" fill="#b3d23f" />
             <Cell name="Above 60" fill="#a44c9e" />
           </Pie>
-          <Legend
-            iconType="circle"
-            layout="vertical"
-            verticalAlign="middle"
-            align="right"
-          />
+          <Legend iconType="circle" />
         </PieChart>
       </ResponsiveContainer>
     </div>
