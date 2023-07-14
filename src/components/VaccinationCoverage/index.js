@@ -1,11 +1,4 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts'
+import {BarChart, Bar, XAxis, YAxis, Legend} from 'recharts'
 
 import './index.css'
 
@@ -30,7 +23,7 @@ const VaccinationCoverage = props => {
   return (
     <div>
       <h1>Vaccination Coverage</h1>
-      <ResponsiveContainer width="100%" height={500}>
+      <>
         <BarChart
           data={updatedData}
           width={1000}
@@ -61,7 +54,7 @@ const VaccinationCoverage = props => {
           <Bar dataKey="dose1" name="DOSE1" fill="#1f77b4" barSize="20%" />
           <Bar dataKey="dose2" name="DOSE2" fill="#fd7f0e" barSize="20%" />
         </BarChart>
-      </ResponsiveContainer>
+      </>
     </div>
   )
 }
