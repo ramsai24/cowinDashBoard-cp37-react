@@ -69,6 +69,28 @@ class CowinDashboard extends Component {
     )
   }
 
+  renderFailureView = () => (
+    <div>
+      <div>
+        <div>
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/cowin-logo.png"
+            alt="website logo"
+          />
+          <h1>Co-WIN</h1>
+        </div>
+        <h1>CoWIN Vaccination in India</h1>
+      </div>
+      <div>
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/api-failure-view.png"
+          alt="failure view"
+        />
+        <h1>Something went wrong</h1>
+      </div>
+    </div>
+  )
+
   renderViews = () => {
     const {apiStatus} = this.state
 
