@@ -4,7 +4,7 @@ import './index.css'
 
 const VaccinationByAge = prop => {
   const {data1} = prop
-  console.log(prop)
+  //   console.log(prop)
 
   //   const {age, count} = data1
   //   console.log(data1)

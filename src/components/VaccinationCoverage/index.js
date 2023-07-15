@@ -3,7 +3,7 @@ import {BarChart, Bar, XAxis, YAxis, Legend} from 'recharts'
 import './index.css'
 
 const VaccinationCoverage = props => {
-  console.log(props)
+  //   console.log(props)
   const {data} = props
   //   console.log(data)
   const updatedData = data.map(each => ({

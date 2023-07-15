@@ -40,9 +40,9 @@ class CowinDashboard extends Component {
 
   renderSuccessView = () => {
     const {data} = this.state
-    console.log(data)
+    // console.log(data)
     const {last7DaysVaccination, vaccinationByAge, vaccinationByGender} = data
-    console.log(last7DaysVaccination, vaccinationByAge, vaccinationByGender)
+    // console.log(last7DaysVaccination, vaccinationByAge, vaccinationByGender)
     return (
       <div>
         <div>
@@ -108,10 +108,10 @@ class CowinDashboard extends Component {
   }
 
   render() {
-    const {data} = this.state
-    console.log(data)
-    const {last7DaysVaccination, vaccinationByAge, vaccinationByGender} = data
-    console.log(last7DaysVaccination, vaccinationByAge, vaccinationByGender)
+    // const {data} = this.state
+    // console.log(data)
+    // const {last7DaysVaccination, vaccinationByAge, vaccinationByGender} = data
+    // console.log(last7DaysVaccination, vaccinationByAge, vaccinationByGender)
     return <div>{this.renderViews()}</div>
   }
 }
