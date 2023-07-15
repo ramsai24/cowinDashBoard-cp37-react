@@ -47,6 +47,7 @@ const VaccinationCoverage = props => {
             }}
           />
           <Legend
+            iconType="square"
             wrapperStyle={{
               padding: 30,
             }}

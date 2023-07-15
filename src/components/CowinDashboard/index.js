@@ -53,16 +53,19 @@ class CowinDashboard extends Component {
           <h1>Co-WIN</h1>
         </div>
         <h1>CoWIN Vaccination in India</h1>
-        {last7DaysVaccination !== undefined && (
-          <VaccinationCoverage data={last7DaysVaccination} />
-        )}
-        {VaccinationByGender !== undefined && (
-          <VaccinationByGender data1={vaccinationByGender} />
-        )}
-        {/* <VaccinationByGender data1={VaccinationByGender} /> ** sending function as arugument so error arraised due to copy paste */}
-        {VaccinationByAge !== undefined && (
-          <VaccinationByAge data1={vaccinationByAge} />
-        )}
+        <div>
+          {last7DaysVaccination !== undefined && (
+            <VaccinationCoverage data={last7DaysVaccination} />
+          )}
+          {VaccinationByGender !== undefined && (
+            <VaccinationByGender data1={vaccinationByGender} />
+          )}
+          {/* <VaccinationByGender data1={VaccinationByGender} /> ** sending function as arugument so error arraised due to copy paste */}
+          {VaccinationByAge !== undefined && (
+            <VaccinationByAge data1={vaccinationByAge} />
+          )}
+        </div>
+
         {/* <VaccinationByGender data={vaccinationByGender} />
         <VaccinationByAge data={vaccinationByAge} /> */}
       </div>
